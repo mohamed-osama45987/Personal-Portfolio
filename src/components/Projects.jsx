@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem";
 
 function Projects() {
   return (
-    <section className="container border">
+    <section className="container border border-orange">
       <h4>02.My Projects</h4>
 
       {portfolioData.map((project) => {

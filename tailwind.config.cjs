@@ -13,6 +13,11 @@ module.exports = {
         textColor: "#8892B0",
         headerColor: "#CCD6F6",
         projectDetailsBackground: "#112240",
+        navBackGround: "#0a192fd9",
+      },
+
+      animation: {
+        "spin-once": "spin finite",
       },
     },
   },

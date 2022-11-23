@@ -9,7 +9,7 @@ export default function App() {
   return (
     <div
       id="App"
-      className="bg-bodyBackGroundColor text-textColor flex flex-col items-center"
+      className="bg-bodyBackGroundColor text-textColor flex flex-col items-center gap-10 h-auto p-7 pt-0"
     >
       <Nav />
       <Hero />

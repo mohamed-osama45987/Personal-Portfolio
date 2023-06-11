@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "./HamburgerMenu";
+import MyResumeButton from "./buttons/MyResumeButton";
 
 function Nav() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -15,38 +16,33 @@ function Nav() {
     : (document.body.style.overflow = "unset");
 
   return (
-    <nav className="min-w-full p-7 bg-navBackGround flex justify-between items-center fixed backdrop-blur-sm">
-      <a href="/" className="Mylogo">
+    <nav className="fixed top-0 flex items-center justify-between min-w-full bg-navBackGround backdrop-blur-sm  px-5 py-7 lg:px-14">
+      <a href="/" className="-z-10">
         <img src="/assets/Svg/My-Logo.svg" alt="Mohamed's logo" />
       </a>
 
-      <section className="hamburgerMenu lg:hidden ">
-        <button
-          className=" openButton space-y-2 flex w-fit flex-col items-end"
-          onClick={toggleMenu}
-        >
-          <span className="block h-0.5 w-8 bg-orange"></span>
-          <span className="block h-0.5 w-6 bg-orange"></span>
-          <span className="block h-0.5 w-5 bg-orange"></span>
-        </button>
-
-        <MobileMenu navOpened={isNavOpen} closeNav={toggleMenu} />
-      </section>
-
-      <ul className=" hidden lg:flex items-center justify-between gap-x-8">
+      <ul className="items-center justify-between hidden lg:flex gap-x-8 text-white">
         <li>
-          <a href="#">01.About</a>
+          <a href="#" className="hover:text-orange">
+            01.About
+          </a>
         </li>
         <li>
-          <a href="#">02.Projects</a>
+          <a href="#" className="hover:text-orange">
+            02.Projects
+          </a>
         </li>
         <li>
-          <a href="#">03.Contact</a>
+          <a href="#" className="hover:text-orange">
+            03.Contact
+          </a>
         </li>
-        <li className="text-orange px-2 py-3 border border-orange rounded">
-          <a href="#">Resume</a>
+        <li>
+          <MyResumeButton />
         </li>
       </ul>
+
+      <MobileMenu navOpened={isNavOpen} closeNav={toggleMenu} />
     </nav>
   );
 }

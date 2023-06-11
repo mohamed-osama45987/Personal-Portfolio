@@ -3,8 +3,8 @@ import mySkillsArr from "../data/mySkills";
 
 function About() {
   return (
-    <section className="container border border-orange grid ">
-      <div className="left-side">
+    <section className=" container border border-orange flex mx-auto">
+      <div className="left-side text-">
         <h4>01.About me</h4>
         <p>
           Hello, my name is Mohamed I enjoy making websites.My interest in

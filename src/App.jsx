@@ -1,21 +1,52 @@
-import "./App.css";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
+import SplashScreen from "./components/SplashScreen";
+import { useState, useEffect } from "react";
 
 export default function App() {
+  // raidal mouse effect
+  const [mouseCoordinates, setMouseCoordinates] = useState({ x: 0, y: 0 });
+
+  const mouseMoveHandler = (event) => {
+    setMouseCoordinates({
+      x: event.clientX,
+      y: event.clientY,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("mousemove", mouseMoveHandler);
+
+    return () => {
+      window.removeEventListener("mousemove", mouseMoveHandler);
+    };
+  }, []);
+
+  // splash screen
+  const [isLoading, setisLoading] = useState(true);
+
+  if (isLoading) {
+    return <SplashScreen finishLoading={() => setisLoading(false)} />;
+  }
+
   return (
     <div
-      id="App"
-      className="bg-bodyBackGroundColor text-textColor flex flex-col items-center gap-10 h-auto p-7 pt-0"
+      style={{
+        background: `radial-gradient(600px at ${Math.round(
+          mouseCoordinates.x
+        )}px ${Math.round(
+          mouseCoordinates.y
+        )}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+      }}
     >
       <Nav />
       <Hero />
-      <About />
+      {/* <About />
       <Projects />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

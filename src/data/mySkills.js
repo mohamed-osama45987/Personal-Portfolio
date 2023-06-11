@@ -7,4 +7,8 @@ export default [
   "Nodejs",
   "Mysql",
   "MongoDB",
+  "Postgress",
+  "AWS",
+  "Digital Ocean",
+  "Nestjs",
 ];

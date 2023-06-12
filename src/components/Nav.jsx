@@ -23,7 +23,7 @@ function Nav() {
 
       <ul className="items-center justify-between hidden lg:flex gap-x-8 text-white">
         <li>
-          <a href="#" className="hover:text-orange">
+          <a href="#ABOUT" className="hover:text-orange">
             01.About
           </a>
         </li>

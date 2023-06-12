@@ -1,14 +1,4 @@
 export default [
-  "Html",
-  "Javascript(es6+)",
-  "React",
-  "Nextjs",
-  "TypeScript",
-  "Nodejs",
-  "Mysql",
-  "MongoDB",
-  "Postgress",
-  "AWS",
-  "Digital Ocean",
-  "Nestjs",
+  ["TypeScript", "React", "JavaScript"],
+  ["Next.js", "Node.js", "Nest.js"],
 ];

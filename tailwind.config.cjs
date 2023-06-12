@@ -18,23 +18,24 @@ module.exports = {
       animation: {
         "scale-in-hor-right":
           "scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
-      },
-      keyframes: {
-        "scale-in-hor-right": {
-          "0%": {
-            transform: "scaleX(0)",
-            "transform-origin": "100% 100%",
-            opacity: "1",
-          },
 
-          "100%": {
-            transform: "scaleX(1)",
-            "transform-origin": "100% 100%",
-            opacity: "1",
+        keyframes: {
+          "scale-in-hor-right": {
+            "0%": {
+              transform: "scaleX(0)",
+              "transform-origin": "100% 100%",
+              opacity: "1",
+            },
+
+            "100%": {
+              transform: "scaleX(1)",
+              "transform-origin": "100% 100%",
+              opacity: "1",
+            },
           },
         },
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };

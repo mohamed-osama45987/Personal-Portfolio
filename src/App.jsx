@@ -12,8 +12,8 @@ export default function App() {
 
   const mouseMoveHandler = (event) => {
     setMouseCoordinates({
-      x: event.clientX,
-      y: event.clientY,
+      x: event.pageX,
+      y: event.pageY,
     });
   };
 
@@ -35,17 +35,13 @@ export default function App() {
   return (
     <div
       style={{
-        background: `radial-gradient(600px at ${Math.round(
-          mouseCoordinates.x
-        )}px ${Math.round(
-          mouseCoordinates.y
-        )}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
+        background: `radial-gradient(600px at ${mouseCoordinates.x}px ${mouseCoordinates.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}
     >
       <Nav />
       <Hero />
-      {/* <About />
-      <Projects />
+      <About />
+      {/*<Projects />
       <Contact /> */}
     </div>
   );

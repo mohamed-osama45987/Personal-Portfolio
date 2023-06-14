@@ -34,7 +34,6 @@ export default function App() {
 
   return (
     <div
-      className="scroll-smooth"
       style={{
         background: `radial-gradient(600px at ${mouseCoordinates.x}px ${mouseCoordinates.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}
@@ -42,8 +41,8 @@ export default function App() {
       <Nav />
       <Hero />
       <About />
-      {/*<Projects />
-      <Contact /> */}
+      <Projects />
+      {/*<Contact /> */}
     </div>
   );
 }

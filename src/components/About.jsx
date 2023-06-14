@@ -4,8 +4,8 @@ import mySkillsArr from "../data/mySkills";
 function About() {
   return (
     <section
-      id="ABOUT"
-      className="container mx-auto flex flex-col md:flex-row p-5 md:p-8 gap-16"
+      id="About"
+      className="container mx-auto flex flex-col md:flex-row p-5 md:p-8 gap-x-16"
     >
       <div className="w-full md:w-1/2">
         <h4 className="text-3xl text-headerColor mb-14">01.About me</h4>

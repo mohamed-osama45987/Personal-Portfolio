@@ -8,7 +8,9 @@ function Projects() {
       className="container mx-auto flex flex-col p-5 md:p-8 gap-x-16"
       id="Projects"
     >
-      <h4 className="text-3xl text-headerColor mb-14">02.My Projects</h4>
+      <h4 className="text-3xl text-headerColor mb-14 font-semibold">
+        02.My Projects
+      </h4>
 
       {portfolioData.map((project, idx) => {
         return <ProjectItem project={project} projectIndex={idx}></ProjectItem>;

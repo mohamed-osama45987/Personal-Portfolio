@@ -8,7 +8,7 @@ function Contact() {
     >
       <h1 className="text-orange">03.What's next ?</h1>
 
-      <h5 className="text-4xl lg:text-6xl	text-headerColor mb-2 lg:mb-5 ">
+      <h5 className="text-4xl lg:text-6xl	text-headerColor mb-2 lg:mb-5 font-semibold">
         Get In Touch
       </h5>
 

@@ -5,10 +5,12 @@ function About() {
   return (
     <section
       id="About"
-      className="container mx-auto flex flex-col md:flex-row p-5 md:p-8 gap-16 "
+      className="container mx-auto flex flex-col lg:flex-row p-5 md:p-8 gap-16 h-screen "
     >
-      <div className="w-full md:w-1/2">
-        <h4 className="text-3xl text-headerColor mb-14">01.About me</h4>
+      <div className="w-full lg:w-1/2">
+        <h4 className="text-3xl text-headerColor mb-14 font-semibold">
+          01.About me
+        </h4>
         <p className="text-xl	text-textColor mb-8">
           Hello, my name is Mohamed I enjoy making websites. My interest in
           computers and programming specifically started when I was young I
@@ -24,7 +26,7 @@ function About() {
         <h2 className="text-xl mb-6  mt-16 text-textColor">
           Some Technologies I Work With:-
         </h2>
-        <div className="text-textColor flex gap-x-16">
+        <div className="text-textColor flex gap-16">
           <ul>
             {mySkillsArr[0].map((skill, idx) => {
               return (
@@ -49,11 +51,11 @@ function About() {
         </div>
       </div>
 
-      <div className="Right max-w-xl md:w-1/2 pb-5 flex content-center items-center">
+      <div className="Right lg:w-1/2  hidden lg:flex items-start ">
         <img
-          src="/assets/images/me.png"
+          src="/assets/Svg/programming.svg"
           alt="My profile picture"
-          className="aspect-square	w-full"
+          className="w-full"
         />
       </div>
     </section>

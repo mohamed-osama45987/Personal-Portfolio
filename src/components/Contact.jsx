@@ -1,20 +1,23 @@
-import React from "react";
+import ContactMeButton from "./buttons/ContactMeButton";
 
 function Contact() {
   return (
-    <section className="container border border-orange">
-      <h1>03.What's next ?</h1>
+    <section
+      className="container mx-auto flex flex-col content-center items-center gap-3 p-5 md:p-8 lg:p-60 text-center"
+      id="Contact"
+    >
+      <h1 className="text-orange">03.What's next ?</h1>
 
-      <h5>Get In Touch</h5>
+      <h5 className="text-4xl lg:text-6xl	text-headerColor mb-2 lg:mb-5 ">
+        Get In Touch
+      </h5>
 
-      <p>
+      <p className="lg:text-xl	text-textColor max-w-2xl mb-3 lg:mb-6">
         I am currently looking for a fulltime postion as a Front-end, Back-end
-        developer if there is a opportunity please contact me
+        developer if there is a opportunity please contact me.
       </p>
 
-      <button>
-        <a href="mailto:mo.mohamed45987@gmail.com">Contact me</a>
-      </button>
+      <ContactMeButton />
     </section>
   );
 }

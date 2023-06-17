@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="About"
-      className="container mx-auto flex flex-col md:flex-row p-5 md:p-8 gap-x-16"
+      className="container mx-auto flex flex-col md:flex-row p-5 md:p-8 gap-16 "
     >
       <div className="w-full md:w-1/2">
         <h4 className="text-3xl text-headerColor mb-14">01.About me</h4>
@@ -49,11 +49,11 @@ function About() {
         </div>
       </div>
 
-      <div className="Right flex-1 h-fit max-w-xl md:w-1/2 pb-5 ">
+      <div className="Right max-w-xl md:w-1/2 pb-5 flex content-center items-center">
         <img
-          src="/assets/svg/react.svg"
+          src="/assets/images/me.png"
           alt="My profile picture"
-          className="w-full"
+          className="aspect-square	w-full"
         />
       </div>
     </section>

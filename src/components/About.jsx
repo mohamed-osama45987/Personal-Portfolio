@@ -5,7 +5,7 @@ function About() {
   return (
     <section
       id="About"
-      className="container mx-auto flex flex-col lg:flex-row p-5 md:p-8 gap-16 h-screen "
+      className="container mx-auto flex flex-col lg:flex-row p-5 md:p-8 gap-16 h-screen"
     >
       <div className="w-full lg:w-1/2">
         <h4 className="text-3xl text-headerColor mb-14 font-semibold">
@@ -51,7 +51,7 @@ function About() {
         </div>
       </div>
 
-      <div className="Right lg:w-1/2  hidden lg:flex items-start ">
+      <div className="lg:w-1/2 hidden lg:flex items-start content-center lg:mt-20 xl:mt-0">
         <img
           src="/assets/Svg/programming.svg"
           alt="My profile picture"

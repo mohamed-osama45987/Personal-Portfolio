@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         sans: ["Fira Code", "monospace", "sans-serif"],
       },
+      fontSize: {
+        clamp: "clamp(40px, 8vw, 70px)",
+      },
       colors: {
         transparent: "transparent",
         bodyBackGroundColor: "#0A192F",

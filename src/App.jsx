@@ -34,6 +34,7 @@ export default function App() {
 
   return (
     <div
+      className="min-h-screen min-w-screen"
       style={{
         background: `radial-gradient(600px at ${mouseCoordinates.x}px ${mouseCoordinates.y}px, rgba(29, 78, 216, 0.15), transparent 80%)`,
       }}

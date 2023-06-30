@@ -19,7 +19,7 @@ function MobileMenu({ navOpened, closeNav }) {
       <HamburgerButton navOpened={navOpened} closeNav={closeNav} />
 
       {navOpened && (
-        <aside className=" absolute top-0 left-0 w-screen h-screen flex flex-col justify-center items-center bg-navBackGround -z-10 animate-scale-in-hor-right">
+        <aside className=" absolute top-0 left-0 w-screen  flex flex-col justify-center items-center bg-navBackGround -z-10 animate-scale-in-hor-right h-screen">
           <ul className="text-textColor">
             {links.map((link, idx) => (
               <li className="mb-10 text-xl">

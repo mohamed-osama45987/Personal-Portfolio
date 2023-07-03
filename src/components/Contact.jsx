@@ -3,7 +3,7 @@ import ContactMeButton from "./buttons/ContactMeButton";
 function Contact() {
   return (
     <section
-      className="container mx-auto flex flex-col content-center items-center gap-3 p-5 md:p-8 lg:p-60 text-center"
+      className="container mx-auto flex flex-col content-center items-center gap-3 p-5 md:p-8 lg:p-60 text-center "
       id="Contact"
     >
       <h1 className="text-orange">03.What's next ?</h1>

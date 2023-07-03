@@ -5,8 +5,8 @@ import ProjectItem from "./ProjectItem";
 function Projects() {
   return (
     <section
-      className="container mx-auto flex flex-col p-5 md:p-8 gap-x-16 mt-10"
       id="Projects"
+      className="container mx-auto flex flex-col p-5 md:p-8 gap-x-16 mt-10 min-h-screen"
     >
       <h4 className="text-3xl text-headerColor mb-14 font-semibold">
         02.My Projects

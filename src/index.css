@@ -6,3 +6,15 @@
   background-color: #0a192f;
   min-height: 100vh;
 }
+
+/* hide scroll bar while maintaining functionality */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: scroll;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+body::-webkit-scrollbar {
+  display: none;
+}

@@ -7,7 +7,7 @@ module.exports = {
         sans: ["Fira Code", "monospace", "sans-serif"],
       },
       fontSize: {
-        clamp: "clamp(30px, 8vw, 70px)",
+        clamp: "clamp(30px, 8vw, 60px)",
       },
       colors: {
         transparent: "transparent",

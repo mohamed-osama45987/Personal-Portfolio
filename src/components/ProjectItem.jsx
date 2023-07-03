@@ -14,9 +14,9 @@ function ProjectItem({ project, projectIndex }) {
       </div>
 
       <div className="row-start-1 col-start-1 col-end-13 lg:col-start-5 lg:col-end-13 flex flex-col justify-center lg:items-end bg-projectDetailsBackground bg-opacity-90 lg:bg-transparent p-6 pb-2 lg:my-auto z-10 lg:z-auto">
-        <h5 className="text-orange text-sm mb-3">Featured project</h5>
+        <h5 className="text-orange text-sm mb-2">Featured project</h5>
 
-        <h1 className="text-3xl lg:text-3xl text-white lg:text-headerColor mb-2.5 lg:mb-5">
+        <h1 className="text-2xl md:text-3xl lg:text-3xl text-white lg:text-headerColor mb-2 lg:mb-5">
           {project.name}
         </h1>
 

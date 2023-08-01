@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="text-white flex flex-col justify-center container mx-auto p-6 min-h-screen pt-16 xl:pt-0">
+    <section className="text-white flex flex-col justify-center container mx-auto p-6 min-h-screen pt-16 2xl:pt-0">
       <h1 className="text-orange mb-7 ">Hi my name is</h1>
       <div className="text-clamp font-semibold min-w-max text-headerColor">
         Mohamed Elshamy.
